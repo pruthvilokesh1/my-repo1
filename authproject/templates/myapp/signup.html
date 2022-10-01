@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <body>
+       
+        <h1>SignUp Form</h1>
+        <form method="post">
+            {{form.as_p}}
+            {% csrf_token %}
+            <input type="submit" value="submit" class="btn btn-primary">
+        </form>
+       
+    </body>
+</html>

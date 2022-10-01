@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends 'myapp/parent.html' %}
+<html>
+    <body>
+        {% block for_child %}
+        
+            <div class="container" align="center">
+                <h1 style="color:red">Login Form</h1>
+                <form method="post">
+                    {{form.as_p}}
+                    {% csrf_token %}
+                    <input type="submit" value="submit" class="btn btn-primary">
+                </form>
+            </div>
+            {% endblock %}
+    </body>
+</html>
